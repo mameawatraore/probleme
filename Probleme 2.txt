@@ -1,0 +1,63 @@
+1.ALgorithme avec procedure
+Algorithme : procedure
+       Variables :
+    i : entier
+
+Début
+    ps ← 0
+
+    Pour i ← 0 à n-1 faire
+        ps ← ps + v1[i] * v2[i]
+    FinPour
+Fin
+ 
+2.
+ 
+ Algorithme Orthogonalite
+
+Variables 
+k, n, i, j : entiers
+v1, v2 : tableaux
+ps : réel
+
+Début
+    Ecrire ("donner une valeur")
+    Lire k   
+    Pour j ← 1 à k faire
+       ecrire ("donner la dimension")  
+          Lire n   
+        Pour i ← 0 à n-1 faire
+          ecrire ("saisir une valeur")  
+            Lire v1[i]
+        FinPour
+        Pour i ← 0 à n-1 faire
+        ecrire("donner une deuxieme valeur")    
+          Lire v2[i]
+        FinPour
+        ps ← dot_product(v1, v2, n)
+        Si ps = 0 alors
+            Afficher "Les vecteurs sont orthogonaux"
+        Sinon
+            Afficher "Les vecteurs ne sont pas orthogonaux"
+        FinSi
+    FinPour
+Fin
+
+
+3. algorithme dot
+   Fonction dot_product(v1, v2, n) : réel
+
+Variables :
+i : entier
+ps : réel
+
+Début
+    ps ← 0
+
+    Pour i ← 0 à n-1 faire
+        ps ← ps + v1[i] * v2[i]
+    FinPour
+    Retourner ps
+Fin
+
+

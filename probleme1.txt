@@ -1,0 +1,44 @@
+Algorithme Somme_Distincts
+
+Variables :
+T1, T2 : tableaux d’entiers
+n, m : entiers
+i, j : entiers
+trouve : booléen
+somme : entier
+
+Début
+
+    somme ← 0
+    Lire n
+    Pour i ← 0 à n-1 faire
+        Lire T1[i]
+    FinPour
+    Lire m
+    Pour i ← 0 à m-1 faire
+        Lire T2[i]
+    FinPour
+    Pour i ← 0 à n-1 faire
+        trouve ← Faux
+        Pour j ← 0 à m-1 faire
+            Si T1[i] = T2[j] alors
+                trouve ← Vrai
+            FinSi
+        FinPour 
+        Si trouve = Faux alors
+            somme ← somme + T1[i]
+        FinSi
+    FinPour
+    Pour i ← 0 à m-1 faire
+        trouve ← Faux
+        Pour j ← 0 à n-1 faire
+            Si T2[i] = T1[j] alors
+                trouve ← Vrai
+            FinSi
+        FinPour
+        Si trouve = Faux alors
+            somme ← somme + T2[i]
+        FinSi
+    FinPour
+    Afficher ("La somme des éléments distincts est :", somme)
+Fin
